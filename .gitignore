@@ -2,5 +2,14 @@
 SKILL.md
 skill.md
 
-# Keep GitHub automation config local only
+# Keep most local assets private
 .github/
+.local/
+
+# Allow shipping the scheduled automation workflow and runner scripts
+!.github/
+!.github/workflows/
+!.github/workflows/auto-update-readme.yml
+!.local/
+!.local/auto_update_readme.py
+!.local/run_auto_update.sh
