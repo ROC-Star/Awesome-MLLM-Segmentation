@@ -1,2 +1,6 @@
 # Local private prompt/skill notes (do not commit)
+SKILL.md
 skill.md
+
+# Keep GitHub automation config local only
+.github/
