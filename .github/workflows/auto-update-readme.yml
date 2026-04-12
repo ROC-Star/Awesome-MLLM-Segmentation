@@ -10,10 +10,12 @@ permissions:
 
 jobs:
   update-readme:
-    runs-on: ubuntu-latest
+    # Requires a self-hosted runner that has Ollama running locally.
+    runs-on: self-hosted
     env:
-      OPENAI_MODEL: gpt-5.3-codex
-      LLM_BACKEND: openai
+      LLM_BACKEND: ollama
+      OLLAMA_URL: http://127.0.0.1:11434/api/generate
+      OLLAMA_MODEL: qwen3.5:35b-a3b-nvfp4
       AUTO_PUSH: '0'
       OLLAMA_TIMEOUT_SEC: '360'
       OLLAMA_RETRIES: '2'
@@ -29,9 +31,16 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Check Ollama service and model
+        run: |
+          curl -fsS http://127.0.0.1:11434/api/tags > /tmp/ollama-tags.json
+          if ! grep -q '"name":"'"${OLLAMA_MODEL}"'"' /tmp/ollama-tags.json; then
+            echo "Model ${OLLAMA_MODEL} not found in local Ollama."
+            echo "Please run on your runner: ollama pull ${OLLAMA_MODEL}"
+            exit 1
+          fi
+
       - name: Run automation script
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python .local/auto_update_readme.py
 
