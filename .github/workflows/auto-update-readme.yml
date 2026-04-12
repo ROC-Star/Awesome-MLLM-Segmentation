@@ -1,8 +1,6 @@
 name: Auto Update README Papers
 
 on:
-  schedule:
-    - cron: '0 2 */3 * *'
   workflow_dispatch:
 
 permissions:
