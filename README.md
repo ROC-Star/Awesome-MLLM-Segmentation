@@ -87,8 +87,8 @@
 64. <span id = "1064">**[STAMP]**</span> | **ArXiv'2511** | Better, Stronger, Faster: Tackling the Trilemma in MLLM-based Segmentation with Simultaneous Textual Mask Prediction | [`[pdf]`](https://www.arxiv.org/abs/2512.00395) | [`[code]`](https://github.com/HKUST-LongGroup/STAMP)
 65. <span id = "1065">**[GETok]**</span> | **ArXiv'2512** | Grounding Everything in Tokens for Multimodal Large Language Models | [`[pdf]`](https://arxiv.org/abs/2512.10554) | [`[code]`](https://getokpage.github.io/)
 66. <span id = "1066">**[Tarot-SAM3]**</span> | **ArXiv'2604** | Tarot-SAM3: Training-free SAM3 for Any Referring Expression Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.07916)
-67. <span id = "1067">**[Thought Compression]**</span> | **ArXiv'2604** | Efficient Reasoning via Thought Compression for Language Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.02040)
-68. <span id = "1068">**[DPA]**</span> | **CVPR'26** | Discriminative Perception via Anchored Description for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.04002)
+67. <span id = "1067">**[WISE]**</span> | **ArXiv'2604** | Efficient Reasoning via Thought Compression for Language Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.02040) | [`[code]`](https://github.com/mrazhou/WISE)
+68. <span id = "1068">**[DPAD]**</span> | **CVPR'26** | Discriminative Perception via Anchored Description for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.04002) | [`[code]`](https://github.com/mrazhou/DPAD)
 69. <span id = "1069">**[WeatherReasonSeg]**</span> | **ArXiv'2603** | WeatherReasonSeg: A Benchmark for Weather-Aware Reasoning Segmentation in Visual Language Models | [`[pdf]`](https://arxiv.org/abs/2603.17680)
 70. <span id = "1070">**[GroundedSurg]**</span> | **ArXiv'2603** | GroundedSurg: A Multi-Procedure Benchmark for Language-Conditioned Surgical Tool Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.01108) | [`[code]`](https://github.com/gaash-lab/GroundedSurg)
 
@@ -103,8 +103,8 @@
 7. <span id = "2007">**[ALTo]**</span> | **ArXiv'2505** | ALTo: Adaptive-Length Tokenizer for Autoregressive Mask Generation | [`[pdf]`](https://arxiv.org/abs/2505.16495) | [`[code]`](https://github.com/yayafengzi/ALToLLM)
 8. <span id = "2008">**[X-SAM]**</span> | **ArXiv'2508** | X-SAM: From Segment Anything to Any Segmentation | [`[pdf]`](https://arxiv.org/abs/2508.04655) | [`[code]`](https://github.com/wanghao9610/X-SAM)
 9. <span id = "2009">**[OV-Stitcher]**</span> | **ArXiv'2604** | OV-Stitcher: A Global Context-Aware Framework for Training-Free Open-Vocabulary Semantic Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.08110)
-10. <span id = "2010">**[SPAR]**</span> | **CVPR'26** | SPAR: Single-Pass Any-Resolution ViT for Open-vocabulary Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.02252)
-11. <span id = "2011">**[MM-OVSeg]**</span> | **CVPR'26** | MM-OVSeg: Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | [`[pdf]`](https://arxiv.org/abs/2603.17528)
+10. <span id = "2010">**[SPAR]**</span> | **CVPR'26** | SPAR: Single-Pass Any-Resolution ViT for Open-vocabulary Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.02252) | [`[code]`](https://github.com/naomikombol/SPAR)
+11. <span id = "2011">**[MM-OVSeg]**</span> | **CVPR'26** | MM-OVSeg: Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | [`[pdf]`](https://arxiv.org/abs/2603.17528) | [`[code]`](https://github.com/Jimmyxichen/MM-OVSeg)
 
 ## Video Segmentation
 
@@ -124,10 +124,10 @@
 14. <span id = "3014">**[PixFoundation 2.0]**</span> | **ArXiv'2508** | PixFoundation 2.0: Do Video Multi-Modal LLMs Use Motion in Visual Grounding? | [`[pdf]`](https://arxiv.org/abs/2509.02807) | [`[code]`](https://github.com/MSiam/PixFoundation-2.0)
 15. <span id = "3015">**[DecAF]**</span> | **ArXiv'2510** | DecAF: Decomposed Attention Fusion in MLLMs for Training-Free Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2510.19592) | [`[code]`](https://github.com/HYUNJS/DecAF)
 16. <span id = "3016">**[UniPixel]**</span> | **NeurIPS'25** | UniPixel: Unified Object Referring and Segmentation for Pixel-Level Visual Reasoning | [`[pdf]`](https://arxiv.org/abs/2509.18094) | [`[code]`](https://github.com/PolyU-ChenLab/UniPixel)
-17. <span id = "3017">**[Trajectory-Aware MLLM]**</span> | **ArXiv'2603** | Learning Trajectory-Aware Multimodal Large Language Models for Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.21488)
-18. <span id = "3018">**[VIRST]**</span> | **CVPR'26** | VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27060)
-19. <span id = "3019">**[AgentRVOS]**</span> | **ArXiv'2603** | AgentRVOS: Reasoning over Object Tracks for Zero-Shot Referring Video Object Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.23489)
-20. <span id = "3020">**[AOM-RVOS]**</span> | **AAAI'26** | Training-Free Spatio-temporal Decoupled Reasoning Video Segmentation with Adaptive Object Memory | [`[pdf]`](https://arxiv.org/abs/2603.01545)
+17. <span id = "3017">**[TrajSeg]**</span> | **ArXiv'2603** | Learning Trajectory-Aware Multimodal Large Language Models for Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.21488) | [`[code]`](https://github.com/haodi19/TrajSeg)
+18. <span id = "3018">**[VIRST]**</span> | **CVPR'26** | VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27060) | [`[code]`](https://github.com/AIDASLab/VIRST)
+19. <span id = "3019">**[AgentRVOS]**</span> | **ArXiv'2603** | AgentRVOS: Reasoning over Object Tracks for Zero-Shot Referring Video Object Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.23489) | [`[code]`](https://cvlab-kaist.github.io/AgentRVOS/)
+20. <span id = "3020">**[SDAM]**</span> | **AAAI'26** | Training-Free Spatio-temporal Decoupled Reasoning Video Segmentation with Adaptive Object Memory | [`[pdf]`](https://arxiv.org/abs/2603.01545)
 21. <span id = "3021">**[SPARROW]**</span> | **CVPR'26** | SPARROW: Learning Spatial Precision and Temporal Referential Consistency in Pixel-Grounded Video MLLMs | [`[pdf]`](https://arxiv.org/abs/2603.12382) | [`[code]`](https://github.com/RISys-Lab/SPARROW)
 22. <span id = "3022">**[MAR3]**</span> | **ArXiv'2603** | MAR3: Multi-Agent Recognition, Reasoning, and Reflection for Reference Audio-Visual Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27706)
 
