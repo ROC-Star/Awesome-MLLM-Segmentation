@@ -1,0 +1,305 @@
+name: Auto Update README Papers
+
+on:
+  schedule:
+    - cron: '0 2 */3 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_MODEL: gpt-5.3-codex
+      KEYWORDS: >-
+        reasoning segmentation || multimodal large language model segmentation ||
+        open-vocabulary segmentation vision language || video reasoning segmentation
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Curate papers with skill and validate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import urllib.parse
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          from datetime import date, datetime
+          from pathlib import Path
+
+          ARXIV_API = "http://export.arxiv.org/api/query"
+          README = Path("README.md")
+          START = "<!-- AUTO_ARXIV_START -->"
+          END = "<!-- AUTO_ARXIV_END -->"
+
+          if not os.environ.get("OPENAI_API_KEY"):
+            raise SystemExit("Missing secret OPENAI_API_KEY")
+
+          def q(keyword: str, max_results: int = 30):
+            params = {
+              "search_query": f"all:{keyword}",
+              "start": 0,
+              "max_results": max_results,
+              "sortBy": "submittedDate",
+              "sortOrder": "descending",
+            }
+            url = ARXIV_API + "?" + urllib.parse.urlencode(params)
+            with urllib.request.urlopen(url, timeout=30) as r:
+              return r.read()
+
+          def parse(feed_bytes):
+            ns = {"atom": "http://www.w3.org/2005/Atom"}
+            root = ET.fromstring(feed_bytes)
+            out = []
+            for e in root.findall("atom:entry", ns):
+              id_url = (e.findtext("atom:id", default="", namespaces=ns) or "").strip()
+              if not id_url:
+                continue
+              arxiv_id = id_url.rsplit("/", 1)[-1]
+              title = " ".join((e.findtext("atom:title", default="", namespaces=ns) or "").split())
+              summary = " ".join((e.findtext("atom:summary", default="", namespaces=ns) or "").split())
+              published = (e.findtext("atom:published", default="", namespaces=ns) or "")
+              out.append({
+                "arxiv_id": arxiv_id,
+                "title": title,
+                "summary": summary,
+                "published": published,
+                "arxiv_url": f"https://arxiv.org/abs/{arxiv_id}",
+              })
+            return out
+
+          keywords = [k.strip() for k in os.environ.get("KEYWORDS", "").split("||") if k.strip()]
+          raw = []
+          for kw in keywords:
+            raw.extend(parse(q(kw, 35)))
+
+          # Dedup by arXiv id
+          uniq = {}
+          for p in raw:
+            uniq[p["arxiv_id"]] = p
+          candidates = sorted(
+            uniq.values(),
+            key=lambda x: x.get("published", ""),
+            reverse=True,
+          )[:120]
+
+          skill_text = """
+          You are a strict literature curation assistant for an awesome-list repository.
+          Goal: select papers strongly related to MLLM-based segmentation and output structured entries.
+          Scope: referring expression segmentation, reasoning segmentation, open-vocabulary semantic segmentation,
+          video reasoning segmentation/RVOS, pixel grounding in multimodal vision-language models.
+          Reject off-topic papers.
+
+          Return JSON only with schema:
+          {"entries":[{"category":"referring_image|open_vocabulary|video_segmentation","short_name":"...",
+          "venue":"...","title":"...","arxiv_url":"https://arxiv.org/abs/<id>","code_url":"...","rationale":"..."}]}
+
+          Rules:
+          - Keep only high-confidence relevant entries.
+          - No duplicates.
+          - Canonical arXiv abs links.
+          - code_url empty when unknown.
+          """.strip()
+          prompt = {
+            "today": date.today().isoformat(),
+            "keywords": keywords,
+            "instructions": skill_text,
+            "candidates": candidates,
+          }
+
+          req_body = {
+            "model": os.environ.get("OPENAI_MODEL", "gpt-5.3-codex"),
+            "input": [
+              {
+                "role": "system",
+                "content": "You are a precise research curator. Follow the skill exactly and return JSON only."
+              },
+              {
+                "role": "user",
+                "content": json.dumps(prompt, ensure_ascii=False)
+              }
+            ]
+          }
+
+          req = urllib.request.Request(
+            "https://api.openai.com/v1/responses",
+            data=json.dumps(req_body).encode("utf-8"),
+            headers={
+              "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
+              "Content-Type": "application/json",
+            },
+            method="POST",
+          )
+
+          with urllib.request.urlopen(req, timeout=90) as resp:
+            llm = json.loads(resp.read().decode("utf-8"))
+
+          text = ""
+          if isinstance(llm, dict):
+            text = llm.get("output_text", "") or ""
+            if not text:
+              # Fallback parse when output_text is absent
+              for item in llm.get("output", []):
+                for c in item.get("content", []):
+                  if c.get("type") == "output_text":
+                    text += c.get("text", "")
+
+          text = text.strip()
+          if not text:
+            raise RuntimeError("LLM returned empty output")
+
+          try:
+            parsed = json.loads(text)
+          except json.JSONDecodeError:
+            # try extracting first JSON block
+            m = re.search(r"\{[\s\S]*\}", text)
+            if not m:
+              raise
+            parsed = json.loads(m.group(0))
+
+          entries = parsed.get("entries", [])
+          if not isinstance(entries, list):
+            raise RuntimeError("Invalid schema: entries must be a list")
+
+          # Existing arXiv ids in README to avoid duplicates.
+          readme_text = README.read_text(encoding="utf-8")
+          existing_ids = set(re.findall(r"arxiv\.org/abs/([0-9]{4}\.[0-9]{4,5})", readme_text, flags=re.I))
+
+          def valid_arxiv(url):
+            return bool(re.match(r"^https://arxiv\.org/abs/[0-9]{4}\.[0-9]{4,5}(v\d+)?$", url.strip()))
+
+          def normalize_venue(s):
+            s = (s or "").strip()
+            if s:
+              return s
+            return "ArXiv'" + datetime.utcnow().strftime("%y%m")
+
+          cleaned = []
+          seen_new = set()
+          for e in entries:
+            if not isinstance(e, dict):
+              continue
+            cat = (e.get("category") or "").strip()
+            if cat not in {"referring_image", "open_vocabulary", "video_segmentation"}:
+              continue
+            title = " ".join((e.get("title") or "").split())
+            arxiv_url = (e.get("arxiv_url") or "").strip()
+            short_name = " ".join((e.get("short_name") or "").split())
+            venue = normalize_venue(e.get("venue"))
+            code_url = (e.get("code_url") or "").strip()
+
+            if not short_name or not title or not valid_arxiv(arxiv_url):
+              continue
+
+            arxiv_id_match = re.search(r"arxiv\.org/abs/([0-9]{4}\.[0-9]{4,5})", arxiv_url)
+            if not arxiv_id_match:
+              continue
+            arxiv_id = arxiv_id_match.group(1)
+
+            if arxiv_id in existing_ids or arxiv_id in seen_new:
+              continue
+
+            # Basic reachability check for abs link.
+            try:
+              with urllib.request.urlopen(arxiv_url, timeout=20) as r:
+                if r.status < 200 or r.status >= 400:
+                  continue
+            except Exception:
+              continue
+
+            if code_url and not re.match(r"^https?://", code_url):
+              code_url = ""
+
+            seen_new.add(arxiv_id)
+            cleaned.append({
+              "category": cat,
+              "short_name": short_name,
+              "venue": venue,
+              "title": title,
+              "arxiv_url": arxiv_url,
+              "code_url": code_url,
+            })
+
+          # Keep top 24 per run to avoid noisy bursts.
+          cleaned = cleaned[:24]
+
+          sections = {
+            "referring_image": "### Referring Expression Segmentation",
+            "open_vocabulary": "### Open-Vocabulary Semantic Segmentation",
+            "video_segmentation": "### Video Segmentation",
+          }
+
+          lines = [START, f"<!-- generated: {date.today().isoformat()} -->", ""]
+          if not cleaned:
+            lines.append("No validated new entries in this cycle.")
+          else:
+            for cat in ["referring_image", "open_vocabulary", "video_segmentation"]:
+              bucket = [x for x in cleaned if x["category"] == cat]
+              if not bucket:
+                continue
+              lines.append(sections[cat])
+              lines.append("")
+              for i, item in enumerate(bucket, 1):
+                part = (
+                  f"{i}. **[{item['short_name']}]** | **{item['venue']}** | "
+                  f"{item['title']} | [`[pdf]`]({item['arxiv_url']})"
+                )
+                if item["code_url"]:
+                  part += f" | [`[code]`]({item['code_url']})"
+                lines.append(part)
+              lines.append("")
+          lines.append(END)
+          block = "\n".join(lines) + "\n"
+
+          text = README.read_text(encoding="utf-8")
+          s = text.find(START)
+          e = text.find(END)
+          if s != -1 and e != -1 and e > s:
+            e2 = e + len(END)
+            new_text = text[:s] + block.rstrip() + "\n" + text[e2:]
+          else:
+            addition = (
+              "\n## Auto Curated Updates\n\n"
+              "This section is updated automatically every 3 days by GitHub Actions.\n\n"
+              + block
+            )
+            new_text = text.rstrip() + "\n" + addition
+
+          # Update Last Updated date.
+          today = date.today().isoformat()
+          if "**Last Updated:" in new_text:
+            new_text = re.sub(
+              r"\*\*Last Updated:\s*[0-9]{4}-[0-9]{2}-[0-9]{2}\*\*",
+              f"**Last Updated: {today}**",
+              new_text,
+              count=1,
+            )
+
+          README.write_text(new_text, encoding="utf-8")
+          print(f"Validated and prepared {len(cleaned)} new entries.")
+          PY
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: auto-update literature list"
+          git push origin HEAD:main
