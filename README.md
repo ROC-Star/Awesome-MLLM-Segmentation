@@ -2,7 +2,9 @@
 
 **If you find this project helpful, please consider giving it a star ⭐.**
 
-**Last Updated: 2026-04-12**
+**Last Updated: 2026-05-01**
+
+New updates are added directly to their corresponding sections.
 
 ## Contents
 
@@ -135,20 +137,3 @@
 ## Feedback
 
 If you have any suggestions or find missing papers, please feel free to reach out at `lanm0002@e.ntu.edu.sg`.
-
-## Auto MLLM Image Segmentation Updates
-
-This block is automatically updated every 3 days by a local agent.
-
-<!-- AUTO_MLLM_IMAGE_SEG_START -->
-<!-- generated: 2026-04-12 -->
-
-### Auto MLLM Image Segmentation Updates
-
-No validated MLLM image segmentation entries in this cycle.
-
-<!-- AUTO_MLLM_IMAGE_SEG_END -->
-
-
-
-

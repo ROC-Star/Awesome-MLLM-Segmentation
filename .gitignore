@@ -5,3 +5,4 @@ skill.md
 # Keep local automation/config private
 .github/
 .local/
+.idea/
