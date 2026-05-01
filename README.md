@@ -93,6 +93,11 @@ New updates are added directly to their corresponding sections.
 68. <span id = "1068">**[DPAD]**</span> | **CVPR'26** | Discriminative Perception via Anchored Description for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.04002) | [`[code]`](https://github.com/mrazhou/DPAD)
 69. <span id = "1069">**[WeatherReasonSeg]**</span> | **ArXiv'2603** | WeatherReasonSeg: A Benchmark for Weather-Aware Reasoning Segmentation in Visual Language Models | [`[pdf]`](https://arxiv.org/abs/2603.17680)
 70. <span id = "1070">**[GroundedSurg]**</span> | **ArXiv'2603** | GroundedSurg: A Multi-Procedure Benchmark for Language-Conditioned Surgical Tool Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.01108) | [`[code]`](https://github.com/gaash-lab/GroundedSurg)
+71. <span id = "1071">**[PRS-Med]**</span> | **ArXiv'2505** | PRS-Med: Position Reasoning Segmentation for Medical Images with Vision-Language Model | [`[pdf]`](https://arxiv.org/abs/2505.11872)
+72. <span id = "1072">**[LlamaSeg]**</span> | **ArXiv'2505** | LlamaSeg: Image Segmentation via Autoregressive Mask Generation | [`[pdf]`](https://arxiv.org/abs/2505.19422)
+73. <span id = "1073">**[MedSeg-R]**</span> | **ArXiv'2506** | MedSeg-R: Medical Image Segmentation with Domain Alignment and RL for Reasoning | [`[pdf]`](https://arxiv.org/abs/2506.10465)
+74. <span id = "1074">**[SegEarth-R2]**</span> | **ArXiv'2512** | SegEarth-R2: Geospatial Multimodal Large Language Model for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2512.20013) | [`[code]`](https://github.com/earth-insights/SegEarth-R2)
+75. <span id = "1075">**[DR^2Seg]**</span> | **ArXiv'2601** | DR^2Seg: Decomposed Reflective Reinforcement Learning for Multimodal Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2601.09981)
 
 ### Open-Vocabulary Semantic Segmentation
 
@@ -107,6 +112,7 @@ New updates are added directly to their corresponding sections.
 9. <span id = "2009">**[OV-Stitcher]**</span> | **ArXiv'2604** | OV-Stitcher: A Global Context-Aware Framework for Training-Free Open-Vocabulary Semantic Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.08110)
 10. <span id = "2010">**[SPAR]**</span> | **CVPR'26** | SPAR: Single-Pass Any-Resolution ViT for Open-vocabulary Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.02252) | [`[code]`](https://github.com/naomikombol/SPAR)
 11. <span id = "2011">**[MM-OVSeg]**</span> | **CVPR'26** | MM-OVSeg: Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | [`[pdf]`](https://arxiv.org/abs/2603.17528) | [`[code]`](https://github.com/Jimmyxichen/MM-OVSeg)
+12. <span id = "2012">**[DSLO]**</span> | **CVPR'26** | Direct Segmentation without Logits Optimization for Open-Vocabulary Semantic Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.07723)
 
 ## Video Segmentation
 
