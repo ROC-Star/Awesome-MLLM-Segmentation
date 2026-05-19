@@ -100,7 +100,6 @@ New updates are added directly to their corresponding sections.
 75. <span id = "1075">**[DR^2Seg]**</span> | **ArXiv'2601** | DR^2Seg: Decomposed Reflective Reinforcement Learning for Multimodal Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2601.09981)
 76. <span id = "1076">**[PixDLM]**</span> | **CVPR'26** | PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.15670)
 77. <span id = "1077">**[UGround]**</span> | **ICML'26** | UGround: Towards Unified Visual Grounding with Unrolled Transformers | [`[pdf]`](https://arxiv.org/abs/2510.03853) | [`[code]`](https://github.com/rui-qian/UGround)
-78. <span id = "1078">**[NOVO]**</span> | **ArXiv'2511** | NOVO: Bridging LLaVA and SAM with Visual-only Prompts for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2511.06651)
 
 ### Open-Vocabulary Semantic Segmentation
 
