@@ -2,7 +2,7 @@
 
 **If you find this project helpful, please consider giving it a star ⭐.**
 
-**Last Updated: 2026-05-01**
+**Last Updated: 2026-05-19**
 
 New updates are added directly to their corresponding sections.
 
@@ -98,6 +98,7 @@ New updates are added directly to their corresponding sections.
 73. <span id = "1073">**[MedSeg-R]**</span> | **ArXiv'2506** | MedSeg-R: Medical Image Segmentation with Domain Alignment and RL for Reasoning | [`[pdf]`](https://arxiv.org/abs/2506.10465)
 74. <span id = "1074">**[SegEarth-R2]**</span> | **ArXiv'2512** | SegEarth-R2: Geospatial Multimodal Large Language Model for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2512.20013) | [`[code]`](https://github.com/earth-insights/SegEarth-R2)
 75. <span id = "1075">**[DR^2Seg]**</span> | **ArXiv'2601** | DR^2Seg: Decomposed Reflective Reinforcement Learning for Multimodal Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2601.09981)
+76. <span id = "1076">**[PixDLM]**</span> | **CVPR'26** | PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.15670)
 
 ### Open-Vocabulary Semantic Segmentation
 
@@ -138,6 +139,7 @@ New updates are added directly to their corresponding sections.
 20. <span id = "3020">**[SDAM]**</span> | **AAAI'26** | Training-Free Spatio-temporal Decoupled Reasoning Video Segmentation with Adaptive Object Memory | [`[pdf]`](https://arxiv.org/abs/2603.01545)
 21. <span id = "3021">**[SPARROW]**</span> | **CVPR'26** | SPARROW: Learning Spatial Precision and Temporal Referential Consistency in Pixel-Grounded Video MLLMs | [`[pdf]`](https://arxiv.org/abs/2603.12382) | [`[code]`](https://github.com/RISys-Lab/SPARROW)
 22. <span id = "3022">**[MAR3]**</span> | **ArXiv'2603** | MAR3: Multi-Agent Recognition, Reasoning, and Reflection for Reference Audio-Visual Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27706)
+23. <span id = "3023">**[SteerSeg]**</span> | **ArXiv'2605** | SteerSeg: Attention Steering for Reasoning Video Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.14908) | [`[code]`](https://steerseg.github.io)
 
 
 ## Feedback
