@@ -68,7 +68,7 @@ New updates are added directly to their corresponding sections.
 43. <span id = "1043">**[SegAgent]**</span> | **CVPR'25** | SegAgent: Exploring Pixel Understanding Capabilities in MLLMs by Imitating Human Annotator Trajectories | [`[pdf]`](https://arxiv.org/abs/2503.08625) | [`[code]`](https://github.com/aim-uofa/SegAgent)
 44. <span id = "1044">**[ALTo]**</span> | **ArXiv'2505** | ALTo: Adaptive-Length Tokenizer for Autoregressive Mask Generation | [`[pdf]`](https://arxiv.org/abs/2505.16495) | [`[code]`](https://github.com/yayafengzi/ALToLLM)
 45. <span id = "1045">**[SAM-R1]**</span> | **ArXiv'2505** | SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via Reinforcement Learning | [`[pdf]`](https://arxiv.org/abs/2505.22596)
-46. <span id = "1046">**[RSVP]**</span> | **ACL'25** | RSVP: Reasoning Segmentation via Visual Prompting and Multi-modal Chain-of-Thought | [`[pdf]`](https://www.arxiv.org/abs/2506.04277)
+46. <span id = "1046">**[RSVP]**</span> | **ACL'25** | RSVP: Reasoning Segmentation via Visual Prompting and Multi-modal Chain-of-Thought | [`[pdf]`](https://www.arxiv.org/abs/2506.04277) | [`[code]`](https://github.com/iSEE-Laboratory/Seg-ReSearch)
 47. <span id = "1047">**[VRS-HQ]**</span> | **CVPR'25** | The Devil is in Temporal Token: High Quality Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2501.08549) | [`[code]`](https://github.com/SitongGong/VRS-HQ)
 48. <span id = "1048">**[VisionReasoner]**</span> | **ArXiv'2505** | VisionReasoner: Unified Visual Perception and Reasoning via Reinforcement Learning | [`[pdf]`](https://arxiv.org/abs/2505.12081) | [`[code]`](https://github.com/dvlab-research/VisionReasoner)
 49. <span id = "1049">**[PixelThink]**</span> | **ArXiv'2505** | PixelThink: Towards Efficient Chain-of-Pixel Reasoning | [`[pdf]`](https://arxiv.org/abs/2505.23727) | [`[code]`](https://github.com/songw-zju/PixelThink)
@@ -93,12 +93,14 @@ New updates are added directly to their corresponding sections.
 68. <span id = "1068">**[DPAD]**</span> | **CVPR'26** | Discriminative Perception via Anchored Description for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.04002) | [`[code]`](https://github.com/mrazhou/DPAD)
 69. <span id = "1069">**[WeatherReasonSeg]**</span> | **ArXiv'2603** | WeatherReasonSeg: A Benchmark for Weather-Aware Reasoning Segmentation in Visual Language Models | [`[pdf]`](https://arxiv.org/abs/2603.17680)
 70. <span id = "1070">**[GroundedSurg]**</span> | **ArXiv'2603** | GroundedSurg: A Multi-Procedure Benchmark for Language-Conditioned Surgical Tool Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.01108) | [`[code]`](https://github.com/gaash-lab/GroundedSurg)
-71. <span id = "1071">**[PRS-Med]**</span> | **ArXiv'2505** | PRS-Med: Position Reasoning Segmentation for Medical Images with Vision-Language Model | [`[pdf]`](https://arxiv.org/abs/2505.11872)
+71. <span id = "1071">**[PRS-Med]**</span> | **ArXiv'2505** | PRS-Med: Position Reasoning Segmentation for Medical Images with Vision-Language Model | [`[pdf]`](https://arxiv.org/abs/2505.11872) | [`[code]`](https://github.com/huyquoctrinh/PRS-Med)
 72. <span id = "1072">**[LlamaSeg]**</span> | **ArXiv'2505** | LlamaSeg: Image Segmentation via Autoregressive Mask Generation | [`[pdf]`](https://arxiv.org/abs/2505.19422)
 73. <span id = "1073">**[MedSeg-R]**</span> | **ArXiv'2506** | MedSeg-R: Medical Image Segmentation with Domain Alignment and RL for Reasoning | [`[pdf]`](https://arxiv.org/abs/2506.10465)
 74. <span id = "1074">**[SegEarth-R2]**</span> | **ArXiv'2512** | SegEarth-R2: Geospatial Multimodal Large Language Model for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2512.20013) | [`[code]`](https://github.com/earth-insights/SegEarth-R2)
 75. <span id = "1075">**[DR^2Seg]**</span> | **ArXiv'2601** | DR^2Seg: Decomposed Reflective Reinforcement Learning for Multimodal Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2601.09981)
 76. <span id = "1076">**[PixDLM]**</span> | **CVPR'26** | PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.15670)
+77. <span id = "1077">**[UGround]**</span> | **ArXiv'2510** | UGround: Towards Unified Visual Grounding with Unrolled Transformers | [`[pdf]`](https://arxiv.org/abs/2510.03853) | [`[code]`](https://github.com/rui-qian/UGround)
+78. <span id = "1078">**[NOVO]**</span> | **ArXiv'2511** | NOVO: Bridging LLaVA and SAM with Visual-only Prompts for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2511.06651)
 
 ### Open-Vocabulary Semantic Segmentation
 
@@ -140,6 +142,7 @@ New updates are added directly to their corresponding sections.
 21. <span id = "3021">**[SPARROW]**</span> | **CVPR'26** | SPARROW: Learning Spatial Precision and Temporal Referential Consistency in Pixel-Grounded Video MLLMs | [`[pdf]`](https://arxiv.org/abs/2603.12382) | [`[code]`](https://github.com/RISys-Lab/SPARROW)
 22. <span id = "3022">**[MAR3]**</span> | **ArXiv'2603** | MAR3: Multi-Agent Recognition, Reasoning, and Reflection for Reference Audio-Visual Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27706)
 23. <span id = "3023">**[SteerSeg]**</span> | **ArXiv'2605** | SteerSeg: Attention Steering for Reasoning Video Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.14908) | [`[code]`](https://steerseg.github.io)
+24. <span id = "3024">**[Seg-ReSearch]**</span> | **ArXiv'2602** | Seg-ReSearch: Segmentation with Interleaved Reasoning and External Search | [`[pdf]`](https://arxiv.org/abs/2602.04454) | [`[code]`](https://github.com/iSEE-Laboratory/Seg-ReSearch)
 
 
 ## Feedback
