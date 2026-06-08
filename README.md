@@ -2,7 +2,7 @@
 
 **If you find this project helpful, please consider giving it a star ⭐.**
 
-**Last Updated: 2026-05-19**
+**Last Updated: 2026-06-08**
 
 New updates are added directly to their corresponding sections.
 
@@ -67,7 +67,7 @@ New updates are added directly to their corresponding sections.
 42. <span id = "1042">**[VistaLLM]**</span> | **CVPR'24** | Jack of All Tasks, Master of Many: Designing General-purpose Coarse-to-Fine Vision-Language Model | [`[pdf]`](https://arxiv.org/abs/2312.12423)
 43. <span id = "1043">**[SegAgent]**</span> | **CVPR'25** | SegAgent: Exploring Pixel Understanding Capabilities in MLLMs by Imitating Human Annotator Trajectories | [`[pdf]`](https://arxiv.org/abs/2503.08625) | [`[code]`](https://github.com/aim-uofa/SegAgent)
 44. <span id = "1044">**[ALTo]**</span> | **ArXiv'2505** | ALTo: Adaptive-Length Tokenizer for Autoregressive Mask Generation | [`[pdf]`](https://arxiv.org/abs/2505.16495) | [`[code]`](https://github.com/yayafengzi/ALToLLM)
-45. <span id = "1045">**[SAM-R1]**</span> | **ArXiv'2505** | SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via Reinforcement Learning | [`[pdf]`](https://arxiv.org/abs/2505.22596)
+45. <span id = "1045">**[SAM-R1]**</span> | **NeurIPS'25** | SAM-R1: Leveraging SAM for Reward Feedback in Multimodal Segmentation via Reinforcement Learning | [`[pdf]`](https://arxiv.org/abs/2505.22596)
 46. <span id = "1046">**[RSVP]**</span> | **ACL'25** | RSVP: Reasoning Segmentation via Visual Prompting and Multi-modal Chain-of-Thought | [`[pdf]`](https://www.arxiv.org/abs/2506.04277) | [`[code]`](https://github.com/iSEE-Laboratory/Seg-ReSearch)
 47. <span id = "1047">**[VRS-HQ]**</span> | **CVPR'25** | The Devil is in Temporal Token: High Quality Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2501.08549) | [`[code]`](https://github.com/SitongGong/VRS-HQ)
 48. <span id = "1048">**[VisionReasoner]**</span> | **ArXiv'2505** | VisionReasoner: Unified Visual Perception and Reasoning via Reinforcement Learning | [`[pdf]`](https://arxiv.org/abs/2505.12081) | [`[code]`](https://github.com/dvlab-research/VisionReasoner)
@@ -100,6 +100,8 @@ New updates are added directly to their corresponding sections.
 75. <span id = "1075">**[DR^2Seg]**</span> | **ArXiv'2601** | DR^2Seg: Decomposed Reflective Reinforcement Learning for Multimodal Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2601.09981)
 76. <span id = "1076">**[PixDLM]**</span> | **CVPR'26** | PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.15670)
 77. <span id = "1077">**[UGround]**</span> | **ICML'26** | UGround: Towards Unified Visual Grounding with Unrolled Transformers | [`[pdf]`](https://arxiv.org/abs/2510.03853) | [`[code]`](https://github.com/rui-qian/UGround)
+78. <span id = "1078">**[Dr. Seg]**</span> | **CVPR'26** | Dr. Seg: Revisiting GRPO Training for Visual Large Language Models through Perception-Oriented Design | [`[pdf]`](https://arxiv.org/abs/2603.00152) | [`[code]`](https://github.com/eVI-group-SCU/Dr-Seg)
+79. <span id = "1079">**[MTRS]**</span> | **ArXiv'2606** | An Open-Source Benchmark and Baseline for Multi-temporal Referring Segmentation | [`[pdf]`](https://arxiv.org/abs/2606.00987)
 
 ### Open-Vocabulary Semantic Segmentation
 
