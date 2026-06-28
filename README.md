@@ -2,7 +2,7 @@
 
 **If you find this project helpful, please consider giving it a star ⭐.**
 
-**Last Updated: 2026-06-08**
+**Last Updated: 2026-06-28**
 
 New updates are added directly to their corresponding sections.
 
@@ -102,6 +102,18 @@ New updates are added directly to their corresponding sections.
 77. <span id = "1077">**[UGround]**</span> | **ICML'26** | UGround: Towards Unified Visual Grounding with Unrolled Transformers | [`[pdf]`](https://arxiv.org/abs/2510.03853) | [`[code]`](https://github.com/rui-qian/UGround)
 78. <span id = "1078">**[Dr. Seg]**</span> | **CVPR'26** | Dr. Seg: Revisiting GRPO Training for Visual Large Language Models through Perception-Oriented Design | [`[pdf]`](https://arxiv.org/abs/2603.00152) | [`[code]`](https://github.com/eVI-group-SCU/Dr-Seg)
 79. <span id = "1079">**[MTRS]**</span> | **ArXiv'2606** | An Open-Source Benchmark and Baseline for Multi-temporal Referring Segmentation | [`[pdf]`](https://arxiv.org/abs/2606.00987)
+80. <span id = "1080">**[AnchorSeg]**</span> | **ACL'26** | AnchorSeg: Language Grounded Query Banks for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.18562) | [`[code]`](https://github.com/rui-qian/AnchorSeg)
+81. <span id = "1081">**[SetCon]**</span> | **ArXiv'2605** | SetCon: Towards Open-Ended Referring Segmentation via Set-Level Concept Prediction | [`[pdf]`](https://arxiv.org/abs/2605.20110)
+82. <span id = "1082">**[IC-Seg]**</span> | **ArXiv'2605** | Don't Guess, Just Ask: Resolving Ambiguity in Referring Segmentation via Multi-turn Clarification | [`[pdf]`](https://arxiv.org/abs/2605.17531) | [`[code]`](https://github.com/iSEE-Laboratory/IC-Seg)
+83. <span id = "1083">**[SegCompass]**</span> | **CVPR'26** | SegCompass: Exploring Interpretable Alignment with Sparse Autoencoders for Enhanced Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.22658) | [`[code]`](https://github.com/ZhenyuLU-Heliodore/SegCompass)
+84. <span id = "1084">**[FlowSeg]**</span> | **ICML'26** | FlowSeg: Dynamic Semantic Guidance for LLM-Conditioned Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.29461) | [`[code]`](https://zkzhang98.github.io/FlowSeg_page/)
+85. <span id = "1085">**[MedVol-R1]**</span> | **ArXiv'2605** | MedVol-R1: Reward-Driven Evidence Grounding for Volumetric Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.26621)
+86. <span id = "1086">**[CR-Seg]**</span> | **ArXiv'2606** | CR-Seg: Attention-Guided and CoT-Enhanced Coarse-to-Refined Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2606.03564)
+87. <span id = "1087">**[StAR]**</span> | **ArXiv'2603** | StAR: Segment Anything Reasoner | [`[pdf]`](https://arxiv.org/abs/2603.14382) | [`[code]`](https://github.com/ysj9909/StAR)
+88. <span id = "1088">**[InstructSAM]**</span> | **ArXiv'2605** | InstructSAM: Segment Any Instance with Any Instructions | [`[pdf]`](https://arxiv.org/abs/2605.26102) | [`[code]`](https://github.com/DCDmllm/InstructSAM)
+89. <span id = "1089">**[B-GRTO]**</span> | **ArXiv'2605** | B-GRTO: Bootstrapped Group Relative Tool Optimization for Referring Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.23500)
+90. <span id = "1090">**[VASA]**</span> | **ArXiv'2605** | Vision Harnessing Agent for Open Ad-hoc Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.19410)
+91. <span id = "1091">**[Qwen3-VL-Seg]**</span> | **ArXiv'2605** | Qwen3-VL-Seg: Unlocking Open-World Referring Segmentation with Vision-Language Grounding | [`[pdf]`](https://arxiv.org/abs/2605.07141)
 
 ### Open-Vocabulary Semantic Segmentation
 
@@ -131,10 +143,10 @@ New updates are added directly to their corresponding sections.
 9. <span id = "3009">**[GLUS]**</span> | **CVPR'25** | GLUS: Global-Local Reasoning Unified into A Single Large Language Model for Video Segmentation | [`[pdf]`](https://arxiv.org/abs/2504.07962) | [`[code]`](https://github.com/GLUS-video/GLUS)
 10. <span id = "3010">**[DeSa2VA]**</span> | **ArXiv'2506** | Decoupled Seg Tokens Make Stronger Reasoning Video Segmenter and Grounder | [`[pdf]`](https://arxiv.org/abs/2506.22880) | [`[code]`](https://github.com/longmalongma/DeSa2VA)
 11. <span id = "3011">**[OmniAVS]**</span> | **ICCV'25** | Towards Omnimodal Expressions and Reasoning in Referring Audio-Visual Segmentation | [`[pdf]`](https://arxiv.org/pdf/2507.22886) | [`[code]`](https://github.com/FudanCVL/OmniAVS)
-12. <span id = "3012">**[Veason-R1]**</span> | **ArXiv'2508** | Reinforcing Video Reasoning Segmentation to Think Before It Segments | [`[pdf]`](https://arxiv.org/abs/2508.11538) | [`[code]`](https://github.com/SitongGong/Veason-R1)
+12. <span id = "3012">**[Veason-R1]**</span> | **CVPR'26** | Reinforcing Video Reasoning Segmentation to Think Before It Segments | [`[pdf]`](https://arxiv.org/abs/2508.11538) | [`[code]`](https://github.com/SitongGong/Veason-R1)
 13. <span id = "3013">**[VoCap]**</span> | **ArXiv'2508** | VoCap: Video Object Captioning and Segmentation from Any Prompt | [`[pdf]`](https://arxiv.org/abs/2508.21809) | [`[code]`](https://github.com/google-deepmind/vocap)
 14. <span id = "3014">**[PixFoundation 2.0]**</span> | **ArXiv'2508** | PixFoundation 2.0: Do Video Multi-Modal LLMs Use Motion in Visual Grounding? | [`[pdf]`](https://arxiv.org/abs/2509.02807) | [`[code]`](https://github.com/MSiam/PixFoundation-2.0)
-15. <span id = "3015">**[DecAF]**</span> | **ArXiv'2510** | DecAF: Decomposed Attention Fusion in MLLMs for Training-Free Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2510.19592) | [`[code]`](https://github.com/HYUNJS/DecAF)
+15. <span id = "3015">**[DecAF]**</span> | **ICLR'26** | DecAF: Decomposed Attention Fusion in MLLMs for Training-Free Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2510.19592) | [`[code]`](https://github.com/HYUNJS/DecAF)
 16. <span id = "3016">**[UniPixel]**</span> | **NeurIPS'25** | UniPixel: Unified Object Referring and Segmentation for Pixel-Level Visual Reasoning | [`[pdf]`](https://arxiv.org/abs/2509.18094) | [`[code]`](https://github.com/PolyU-ChenLab/UniPixel)
 17. <span id = "3017">**[TrajSeg]**</span> | **ArXiv'2603** | Learning Trajectory-Aware Multimodal Large Language Models for Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.21488) | [`[code]`](https://github.com/haodi19/TrajSeg)
 18. <span id = "3018">**[VIRST]**</span> | **CVPR'26** | VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27060) | [`[code]`](https://github.com/AIDASLab/VIRST)
@@ -144,6 +156,7 @@ New updates are added directly to their corresponding sections.
 22. <span id = "3022">**[MAR3]**</span> | **ArXiv'2603** | MAR3: Multi-Agent Recognition, Reasoning, and Reflection for Reference Audio-Visual Segmentation | [`[pdf]`](https://arxiv.org/abs/2603.27706)
 23. <span id = "3023">**[SteerSeg]**</span> | **ArXiv'2605** | SteerSeg: Attention Steering for Reasoning Video Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.14908) | [`[code]`](https://steerseg.github.io)
 24. <span id = "3024">**[Seg-ReSearch]**</span> | **ArXiv'2602** | Seg-ReSearch: Segmentation with Interleaved Reasoning and External Search | [`[pdf]`](https://arxiv.org/abs/2602.04454) | [`[code]`](https://github.com/iSEE-Laboratory/Seg-ReSearch)
+25. <span id = "3025">**[RCoT-Seg]**</span> | **ArXiv'2605** | RCoT-Seg: Reinforced Chain-of-Thought for Video Reasoning and Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.07334) | [`[code]`](https://github.com/Victor-wjw/RCoT-Seg)
 
 
 ## Feedback
