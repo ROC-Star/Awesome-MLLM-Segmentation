@@ -2,7 +2,7 @@
 
 **If you find this project helpful, please consider giving it a star ⭐.**
 
-**Last Updated: 2026-06-28**
+**Last Updated: 2026-08-29**
 
 New updates are added directly to their corresponding sections.
 
@@ -46,7 +46,7 @@ New updates are added directly to their corresponding sections.
 21. <span id = "1021">**[UnifiedMLLM]**</span> | **ArXiv'2408** | UnifiedMLLM: Enabling Unified Representation for Multi-modal Multi-tasks With Large Language Model | [`[pdf]`](https://arxiv.org/abs/2408.02503) | [`[code]`](https://github.com/lzw-lzw/UnifiedMLLM)
 22. <span id = "1022">**[DIFFLMM]**</span> | **ArXiv'2410** | Emerging Pixel Grounding in Large Multimodal Models Without Grounding Supervision | [`[pdf]`](https://arxiv.org/abs/2410.08209) | [`[code]`](https://github.com/Shengcao-Cao/groundLMM)
 23. <span id = "1023">**[SegLLM]**</span> | **ICLR'25** | SegLLM: Multi-round Reasoning Segmentation | [`[pdf]`](https://arxiv.org/pdf/2410.18923) | [`[code]`](https://github.com/berkeley-hipie/segllm)
-24. <span id = "1024">**[HyperSeg]**</span> | **ArXiv'2411** | HyperSeg: Towards Universal Visual Segmentation with Large Language Model| [`[pdf]`](https://arxiv.org/abs/2411.17606) | [`[code]`](https://github.com/congvvc/HyperSeg)
+24. <span id = "1024">**[HyperSeg]**</span> | **ArXiv'2411** | HyperSeg: Towards Universal Visual Segmentation with Large Language Model | [`[pdf]`](https://arxiv.org/abs/2411.17606) | [`[code]`](https://github.com/congvvc/HyperSeg)
 25. <span id = "1025">**[InstructSeg]**</span> | **ArXiv'2412** | InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models | [`[pdf]`](https://arxiv.org/abs/2412.14006) | [`[code]`](https://github.com/congvvc/InstructSeg)
 26. <span id = "1026">**[PRIMA]**</span> | **ArXiv'2412** | PRIMA: Multi-Image Vision-Language Models for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2412.15209) | [`[code]`](https://plan-lab.github.io/projects/prima/)
 27. <span id = "1027">**[GeoGround]**</span> | **ArXiv'2411** | GeoGround: A Unified Large Vision-Language Model for Remote Sensing Visual Grounding | [`[pdf]`](https://arxiv.org/abs/2411.11904) | [`[code]`](https://github.com/zytx121/GeoGround)
@@ -114,13 +114,32 @@ New updates are added directly to their corresponding sections.
 89. <span id = "1089">**[B-GRTO]**</span> | **ArXiv'2605** | B-GRTO: Bootstrapped Group Relative Tool Optimization for Referring Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.23500)
 90. <span id = "1090">**[VASA]**</span> | **ArXiv'2605** | Vision Harnessing Agent for Open Ad-hoc Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.19410)
 91. <span id = "1091">**[Qwen3-VL-Seg]**</span> | **ArXiv'2605** | Qwen3-VL-Seg: Unlocking Open-World Referring Segmentation with Vision-Language Grounding | [`[pdf]`](https://arxiv.org/abs/2605.07141)
+92. <span id = "1092">**[Rea2Seg]**</span> | **ArXiv'2606** | Reason Twice: Segmentation via Candidate Discovery and Comparative Reasoning | [`[pdf]`](https://arxiv.org/abs/2606.09303) | [`[code]`](https://snowball521.github.io/Rea2Seg-Project/)
+93. <span id = "1093">**[CCRC]**</span> | **ArXiv'2606** | CCRC: A Change-Aware Captioning and Reasoning Chain for Image Change Captioning and Segmentation | [`[pdf]`](https://arxiv.org/abs/2606.28724)
+94. <span id = "1094">**[GEAR-Seg]**</span> | **ArXiv'2607** | GEAR-Seg: A Grounded Explainable Agent for Reasoning Segmentation and Data Engine | [`[pdf]`](https://arxiv.org/abs/2607.00544)
+95. <span id = "1095">**[PanoSeeker]**</span> | **ECCV'26** | Seek to Segment: Active Perception for Panoramic Referring Segmentation | [`[pdf]`](https://arxiv.org/abs/2607.02497) | [`[code]`](https://henghuiding.com/APRS/)
+96. <span id = "1096">**[DGSeg]**</span> | **ECCV'26** | DGSeg: Dynamic Gating of Semantic-Spatial Guided Predictions for Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2607.04779) | [`[code]`](https://github.com/RZZeng/DGSeg)
+97. <span id = "1097">**[SegAnswer]**</span> | **ArXiv'2607** | Segmentation before Answering: Pixel Grounding for MLLM Visual Reasoning | [`[pdf]`](https://arxiv.org/abs/2607.05798)
+98. <span id = "1098">**[CycleGRPO]**</span> | **ECCV'26** | Actor as Its Own Critic: Unifying Region Understanding and Localization via CycleGRPO | [`[pdf]`](https://arxiv.org/abs/2607.11581) | [`[code]`](https://github.com/devinxzhang/CycleGRPO)
+99. <span id = "1099">**[OP-HRG]**</span> | **ECCV'26** | Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning | [`[pdf]`](https://arxiv.org/abs/2607.15374)
+100. <span id = "1100">**[VespaSeg]**</span> | **ArXiv'2608** | VespaSeg: A Resource-Aware Ground-then-Segment Pipeline for Referring Expression Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.01077) | [`[code]`](https://github.com/Savidilsh/VespaSeg)
+101. <span id = "1101">**[PixVL]**</span> | **ArXiv'2608** | PixVL: Self-Supervised Training of Pixel-Level MLLMs via a Unified Mask-Text Consistency Cycle | [`[pdf]`](https://arxiv.org/abs/2608.01354)
+102. <span id = "1102">**[STAMPlus]**</span> | **ArXiv'2608** | Better, Stronger, Faster, and Broader: Structured All-Mask Prediction for MLLM-Based Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.02791)
+103. <span id = "1103">**[EgoAfford]**</span> | **ArXiv'2608** | EgoAfford: Task-Oriented Affordance Grounding via Egocentric Referring Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.04533) | [`[code]`](https://egoafford.github.io)
+104. <span id = "1104">**[MedPixel]**</span> | **ArXiv'2608** | MedPixel: A Unified Pixel-Language Model for Medical Reasoning and Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.09818) | [`[code]`](https://github.com/yhy-whu/Medpixel)
+105. <span id = "1105">**[MedUP]**</span> | **ArXiv'2608** | MedUP: Awakening Unified Understanding and Perception in Medical Vision-Language Models | [`[pdf]`](https://arxiv.org/abs/2608.10635)
+106. <span id = "1106">**[FIRM]**</span> | **ArXiv'2608** | FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.13980)
+107. <span id = "1107">**[FloodReasonBench]**</span> | **ArXiv'2608** | FloodReasonBench: Benchmarking VLM Reasoning Segmentation for Embodied Flood Response at the Edge | [`[pdf]`](https://arxiv.org/abs/2608.15410)
+108. <span id = "1108">**[DRAgent]**</span> | **ArXiv'2608** | DRAgent: Discriminative Reasoning Agent for Referring Expression Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.22885)
+109. <span id = "1109">**[PAYN]**</span> | **ICML'26** | Position Is All You Need: A Free Lunch Token Compression Strategy for MLLM-based Referring Expression Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.26142) | [`[code]`](https://github.com/YuhanLiu231/PAYN)
+110. <span id = "1110">**[MedREAL]**</span> | **ECCV'26** | From Reasoning to Pixels: Grounded Medical Multimodal LLMs for VQA and Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.26856)
 
 ### Open-Vocabulary Semantic Segmentation
 
 1. <span id = "2001">**[PSALM]**</span> | **ECCV'24** | PSALM: Pixelwise SegmentAtion with Large Multi-Modal Model | [`[pdf]`](https://arxiv.org/abs/2403.14598) | [`[code]`](https://github.com/zamling/PSALM)
 2. <span id = "2002">**[LLMFormer]**</span> | **IJCV'24** | LLMFormer: Large Language Model for Open-Vocabulary Semantic Segmentation | [`[pdf]`](https://link-springer-com.remotexs.ntu.edu.sg/article/10.1007/s11263-024-02171-y)
 3. <span id = "2003">**[LaSagnA]**</span> | **ArXiv'2404** | LaSagnA: Language-based Segmentation Assistant for Complex Queries | [`[pdf]`](https://arxiv.org/abs/2404.08506) | [`[code]`](https://github.com/congvvc/LaSagnA)
-4. <span id = "2004">**[HyperSeg]**</span> | **ArXiv'2411** | HyperSeg: Towards Universal Visual Segmentation with Large Language Model| [`[pdf]`](https://arxiv.org/abs/2411.17606) | [`[code]`](https://github.com/congvvc/HyperSeg)
+4. <span id = "2004">**[HyperSeg]**</span> | **ArXiv'2411** | HyperSeg: Towards Universal Visual Segmentation with Large Language Model | [`[pdf]`](https://arxiv.org/abs/2411.17606) | [`[code]`](https://github.com/congvvc/HyperSeg)
 5. <span id = "2005">**[Text4Seg]**</span> | **ICLR'25** | Text4Seg: Reimagining Image Segmentation as Text Generation | [`[pdf]`](https://arxiv.org/abs/2410.09855) | [`[code]`](https://github.com/mc-lan/Text4Seg)
 6. <span id = "2006">**[HiMTok]**</span> | **ICCV'25** | HiMTok: Learning Hierarchical Mask Tokens for Image Segmentation with Large Multimodal Model | [`[pdf]`](https://arxiv.org/abs/2503.13026) | [`[code]`](https://github.com/yayafengzi/LMM-HiMTok)
 7. <span id = "2007">**[ALTo]**</span> | **ArXiv'2505** | ALTo: Adaptive-Length Tokenizer for Autoregressive Mask Generation | [`[pdf]`](https://arxiv.org/abs/2505.16495) | [`[code]`](https://github.com/yayafengzi/ALToLLM)
@@ -129,6 +148,8 @@ New updates are added directly to their corresponding sections.
 10. <span id = "2010">**[SPAR]**</span> | **CVPR'26** | SPAR: Single-Pass Any-Resolution ViT for Open-vocabulary Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.02252) | [`[code]`](https://github.com/naomikombol/SPAR)
 11. <span id = "2011">**[MM-OVSeg]**</span> | **CVPR'26** | MM-OVSeg: Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | [`[pdf]`](https://arxiv.org/abs/2603.17528) | [`[code]`](https://github.com/Jimmyxichen/MM-OVSeg)
 12. <span id = "2012">**[DSLO]**</span> | **CVPR'26** | Direct Segmentation without Logits Optimization for Open-Vocabulary Semantic Segmentation | [`[pdf]`](https://arxiv.org/abs/2604.07723)
+13. <span id = "2013">**[ProC-SAM3]**</span> | **GRSL'26** | Prompt-Calibrated SAM 3 for Open-Vocabulary Remote Sensing Semantic Segmentation | [`[pdf]`](https://arxiv.org/abs/2606.21863) | [`[code]`](https://github.com/YanghuiSong/ProC-SAM3)
+14. <span id = "2014">**[STAMPlus]**</span> | **ArXiv'2608** | Better, Stronger, Faster, and Broader: Structured All-Mask Prediction for MLLM-Based Segmentation | [`[pdf]`](https://arxiv.org/abs/2608.02791)
 
 ## Video Segmentation
 
@@ -136,7 +157,7 @@ New updates are added directly to their corresponding sections.
 2. <span id = "3002">**[VideoLISA]**</span> | **NeurIPS'24** | One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos | [`[pdf]`](https://arxiv.org/abs/2409.19603) | [`[code]`](https://github.com/showlab/VideoLISA)
 3. <span id = "3003">**[VITRON ]**</span> | **NeurIPS'24** | Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing | [`[pdf]`](https://arxiv.org/abs/2412.19806) | [`[code]`](https://github.com/SkyworkAI/Vitron)
 4. <span id = "3004">**[ViLLa]**</span> | **NeurIPS'25** | ViLLa: Video Reasoning Segmentation with Large Language Model | [`[pdf]`](https://arxiv.org/abs/2407.14500) | [`[code]`](https://github.com/rkzheng99/ViLLa)
-5. <span id = "3005">**[HyperSeg]**</span> | **ArXiv'2411** | HyperSeg: Towards Universal Visual Segmentation with Large Language Model| [`[pdf]`](https://arxiv.org/abs/2411.17606) | [`[code]`](https://github.com/congvvc/HyperSeg)
+5. <span id = "3005">**[HyperSeg]**</span> | **ArXiv'2411** | HyperSeg: Towards Universal Visual Segmentation with Large Language Model | [`[pdf]`](https://arxiv.org/abs/2411.17606) | [`[code]`](https://github.com/congvvc/HyperSeg)
 6. <span id = "3006">**[InstructSeg]**</span> | **ArXiv'2412** | InstructSeg: Unifying Instructed Visual Segmentation with Multi-modal Large Language Models | [`[pdf]`](https://arxiv.org/abs/2412.14006) | [`[code]`](https://github.com/congvvc/InstructSeg)
 7. <span id = "3007">**[Sa2VA]**</span> | **ArXiv'2501** | Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos | [`[pdf]`](https://arxiv.org/abs/2501.04001) | [`[code]`](https://github.com/magic-research/Sa2VA)
 8. <span id = "3008">**[VRS-HQ]**</span> | **CVPR'25** | The Devil is in Temporal Token: High Quality Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2501.08549) | [`[code]`](https://github.com/SitongGong/VRS-HQ)
@@ -157,6 +178,10 @@ New updates are added directly to their corresponding sections.
 23. <span id = "3023">**[SteerSeg]**</span> | **ArXiv'2605** | SteerSeg: Attention Steering for Reasoning Video Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.14908) | [`[code]`](https://steerseg.github.io)
 24. <span id = "3024">**[Seg-ReSearch]**</span> | **ArXiv'2602** | Seg-ReSearch: Segmentation with Interleaved Reasoning and External Search | [`[pdf]`](https://arxiv.org/abs/2602.04454) | [`[code]`](https://github.com/iSEE-Laboratory/Seg-ReSearch)
 25. <span id = "3025">**[RCoT-Seg]**</span> | **ArXiv'2605** | RCoT-Seg: Reinforced Chain-of-Thought for Video Reasoning and Segmentation | [`[pdf]`](https://arxiv.org/abs/2605.07334) | [`[code]`](https://github.com/Victor-wjw/RCoT-Seg)
+26. <span id = "3026">**[FeVOS]**</span> | **ECCV'26** | FeVOS: Foresight Expression Video Object Segmentation | [`[pdf]`](https://arxiv.org/abs/2606.25585) | [`[code]`](https://henghuiding.com/FeVOS/)
+27. <span id = "3027">**[STAC]**</span> | **ArXiv'2607** | STAC: Selective Spatiotemporal Aggregation and Compression for Video Reasoning Segmentation | [`[pdf]`](https://arxiv.org/abs/2607.02922) | [`[code]`](https://github.com/MCG-NKU/nku-video)
+28. <span id = "3028">**[ReflexTrack]**</span> | **ArXiv'2607** | ReflexTrack: A Feedback-Driven Agent for Training-Free Referring Video Object Segmentation | [`[pdf]`](https://arxiv.org/abs/2607.24098)
+29. <span id = "3029">**[PhysMLLMs]**</span> | **ArXiv'2608** | PhysMLLMs: Spatial Priors for Unified Referring Segmentation and Grounded Reasoning of Images and Videos | [`[pdf]`](https://arxiv.org/abs/2608.24574) | [`[code]`](https://github.com/tusu-code/20260121-icml2026-2)
 
 
 ## Feedback
